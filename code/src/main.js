@@ -1,6 +1,7 @@
 import { getSecondsLeftOfYear, getTimeString } from "./clock";
 import './style.css'
 
+const unusedVariable = 3;
 const timeContainer = document.getElementById("time");
 const timeLeft = document.getElementById("seconds-left");
 
