@@ -133,3 +133,6 @@ I dag handler det om å deploye appen, ikke hvordan den fungerer eller å lage f
 Som navnet tilsier, viser appen nåværende tid og antall sekunder igjen av året:
 
 ![](./images/app01.png)
+
+
+### [Gå til oppgave 2 :arrow_right:](../oppgave-2/README.md)
