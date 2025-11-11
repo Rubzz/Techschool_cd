@@ -67,3 +67,11 @@ jobs:
 +        artifact_name: artifact
 +        uses: actions/deploy-pages@v4 
 ```
+
+### Hva gjør deploy-jobben?
+
+Deploy-jobben kjører kun etter at build-jobben er fullført (`needs: build`). Dette sikrer at vi kun deployer når bygget har gått bra.
+
+Jobben må ha spesielle tillatelser for å kunne skrive til GitHub Pages og bruke ID-token for autentisering. Dette settes med `permissions`-seksjonen (Dvs. vi gir Action-kjøringen vår tilgang til å skrive til Github Pages). 
+
+Selve deploy-steget bruker `actions/deploy-pages@v4` som henter artifaktet vi lastet opp i build-jobben (ved å referere til `artifact_name: artifact`) og deployer dette til GitHub Pages.
